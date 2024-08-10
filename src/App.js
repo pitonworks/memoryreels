@@ -4,7 +4,7 @@ import MediaUploadForm from './components/MediaUploadForm';
 function App() {
     return (
         <div className="App">
-            <h1>Media Upload App</h1>
+            <h1>Ömer iş başında selamlar</h1>
             <MediaUploadForm />
         </div>
     );

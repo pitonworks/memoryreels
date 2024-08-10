@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './MediaUploadForm.css'; // Stil dosyasını ithal edin
+import './MediaUploadForm.css'; 
 
 const MediaUploadForm = () => {
     const [file, setFile] = useState(null);
@@ -61,7 +61,7 @@ const MediaUploadForm = () => {
         formData.append('file', file);
 
         try {
-            await axios.post('http://localhost:8000/api/upload/', formData, {
+            await axios.post('http://localhost:8000/api/upload/', formData, { //upload api
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
