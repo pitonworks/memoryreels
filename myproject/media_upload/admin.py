@@ -3,4 +3,6 @@ from .models import MediaFile
 
 @admin.register(MediaFile)
 class MediaFileAdmin(admin.ModelAdmin):
-    list_display = ('id', 'file', 'uploaded_at')
+    list_display = ('id', 'file', 'media_type', 'uploaded_at')
+    list_filter = ('media_type', 'uploaded_at')
+    search_fields = ('file',)
