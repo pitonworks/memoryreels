@@ -6,6 +6,7 @@ function App() {
         <div className="App">
             <h1>Memory Reels</h1>
             <MediaUploadForm />
+            
         </div>
     );
 }
